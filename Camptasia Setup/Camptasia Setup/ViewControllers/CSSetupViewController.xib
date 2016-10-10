@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CSSetupViewController">
+            <connections>
+                <outlet property="lapelMicrophone" destination="sTd-cQ-Y63" id="9Px-5R-CB6"/>
+                <outlet property="learningGlass" destination="y2q-5Z-r8b" id="4fN-Il-sIU"/>
+                <outlet property="presentationLoaded" destination="HOE-qe-SjD" id="Hc5-Ex-Y4V"/>
+                <outlet property="roomLights" destination="XQV-vX-XFc" id="Hg8-JV-QdQ"/>
+                <outlet property="studioLights" destination="0ji-AR-2x0" id="i13-0T-nWu"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="SSView">
+            <rect key="frame" x="0.0" y="0.0" width="1200" height="800"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CGv-yL-TEC">
+                    <rect key="frame" x="41" y="708" width="539" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="535" id="7Da-cL-Gvs"/>
+                        <constraint firstAttribute="height" constant="45" id="aDE-4G-gaw"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Set up:" id="68i-Yz-EK2">
+                        <font key="font" metaFont="system" size="37"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="0ji-AR-2x0" customClass="CSCheckboxView">
+                    <rect key="frame" x="109" y="560" width="728" height="90"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkp-RG-TTG">
+                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Studio Lights are on?" id="6a9-rO-Xbk">
+                                <font key="font" metaFont="systemLight" size="26"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYl-m9-hFt" customClass="CSAttrributedButton">
+                            <rect key="frame" x="20" y="20" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alternateImage="CheckIcon" imageScaling="proportionallyUpOrDown" inset="2" id="qDv-RQ-2Dr">
+                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="0N6-GY-yt1"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="button" destination="JYl-m9-hFt" id="UyE-Db-wPV"/>
+                        <outlet property="label" destination="zkp-RG-TTG" id="5Sz-4d-2y3"/>
+                    </connections>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="XQV-vX-XFc" customClass="CSCheckboxView">
+                    <rect key="frame" x="109" y="438" width="728" height="90"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bsm-G0-Szw">
+                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Room lights are off?" id="GN8-ry-xAV">
+                                <font key="font" metaFont="systemLight" size="26"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4FU-nx-i6B" customClass="CSAttrributedButton">
+                            <rect key="frame" x="20" y="20" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alternateImage="CheckIcon" imageScaling="proportionallyUpOrDown" inset="2" id="5bq-ha-wR9">
+                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="K5O-R2-mCN"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="button" destination="4FU-nx-i6B" id="vXK-fu-PkB"/>
+                        <outlet property="label" destination="Bsm-G0-Szw" id="ibR-Cj-PEb"/>
+                    </connections>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="sTd-cQ-Y63" customClass="CSCheckboxView">
+                    <rect key="frame" x="109" y="316" width="728" height="90"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRc-VZ-6rt">
+                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Lapel microphone is on and properly attached?" id="JKa-PO-Kd0">
+                                <font key="font" metaFont="systemLight" size="26"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9f-XI-GLW" customClass="CSAttrributedButton">
+                            <rect key="frame" x="20" y="20" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alternateImage="CheckIcon" imageScaling="proportionallyUpOrDown" inset="2" id="Qm6-eE-oKR">
+                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="gU9-ya-49Y"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="button" destination="y9f-XI-GLW" id="L0j-mF-Hzy"/>
+                        <outlet property="label" destination="eRc-VZ-6rt" id="MM3-id-LHN"/>
+                    </connections>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="HOE-qe-SjD" customClass="CSCheckboxView">
+                    <rect key="frame" x="109" y="194" width="728" height="90"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSa-0g-dtk">
+                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Presentation is loaded on the computer?" id="NGC-ec-KCN">
+                                <font key="font" metaFont="systemLight" size="26"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcn-cM-oMZ" customClass="CSAttrributedButton">
+                            <rect key="frame" x="20" y="20" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alternateImage="CheckIcon" imageScaling="proportionallyUpOrDown" inset="2" id="hyb-jE-WST">
+                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="fZk-dB-ehZ"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="button" destination="xcn-cM-oMZ" id="AeO-qs-twZ"/>
+                        <outlet property="label" destination="WSa-0g-dtk" id="HrY-q9-sZE"/>
+                    </connections>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="y2q-5Z-r8b" customClass="CSCheckboxView">
+                    <rect key="frame" x="109" y="72" width="728" height="90"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhL-tQ-Tme">
+                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Learning Glass lights are on?" id="yPj-lw-8ts">
+                                <font key="font" metaFont="systemLight" size="26"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJn-Ja-1uW" customClass="CSAttrributedButton">
+                            <rect key="frame" x="20" y="20" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alternateImage="CheckIcon" imageScaling="proportionallyUpOrDown" inset="2" id="fV0-th-DTA">
+                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="7dl-Hs-Vde"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="button" destination="UJn-Ja-1uW" id="kW1-ns-bMH"/>
+                        <outlet property="label" destination="bhL-tQ-Tme" id="daj-6p-NOj"/>
+                    </connections>
+                </customView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HVq-NF-IEg" customClass="CSAttrributedButton">
+                    <rect key="frame" x="957" y="36" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YMf-Pv-fnv"/>
+                        <constraint firstAttribute="width" constant="200" id="usn-Tr-f4N"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Continue" bezelStyle="shadowlessSquare" alignment="center" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="68e-aR-BkQ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="20" name=".SFNSText-Bold"/>
+                    </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.2274509804" green="0.3635390101" blue="0.46984679600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" red="0.58039215690000001" green="0.76470588240000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didClickContinue:" target="-2" id="89o-kc-xCI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="CGv-yL-TEC" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="0H7-eL-5HN"/>
+                <constraint firstItem="CGv-yL-TEC" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="47" id="0IP-Qo-6X2"/>
+                <constraint firstAttribute="trailing" secondItem="HOE-qe-SjD" secondAttribute="trailing" constant="363" id="4JZ-uI-ehe"/>
+                <constraint firstItem="0ji-AR-2x0" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="150" id="5xs-Pi-6w1"/>
+                <constraint firstItem="XQV-vX-XFc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="7jM-TW-73v"/>
+                <constraint firstItem="XQV-vX-XFc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="272" id="DFf-i6-wp5"/>
+                <constraint firstItem="HOE-qe-SjD" firstAttribute="top" secondItem="sTd-cQ-Y63" secondAttribute="bottom" constant="32" id="DhB-RP-7R5"/>
+                <constraint firstItem="HOE-qe-SjD" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="Dlx-Tj-Cxk"/>
+                <constraint firstItem="sTd-cQ-Y63" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="IIq-U7-pZr"/>
+                <constraint firstAttribute="trailing" secondItem="HVq-NF-IEg" secondAttribute="trailing" constant="43" id="QF3-PD-XA7"/>
+                <constraint firstAttribute="trailing" secondItem="y2q-5Z-r8b" secondAttribute="trailing" constant="363" id="XOw-07-pCz"/>
+                <constraint firstItem="sTd-cQ-Y63" firstAttribute="top" secondItem="XQV-vX-XFc" secondAttribute="bottom" constant="32" id="Yby-oo-lni"/>
+                <constraint firstAttribute="bottom" secondItem="HVq-NF-IEg" secondAttribute="bottom" constant="36" id="bl6-sa-a4y"/>
+                <constraint firstAttribute="trailing" secondItem="0ji-AR-2x0" secondAttribute="trailing" constant="363" id="eKM-sd-ToJ"/>
+                <constraint firstAttribute="trailing" secondItem="XQV-vX-XFc" secondAttribute="trailing" constant="363" id="isA-ay-j5q"/>
+                <constraint firstItem="y2q-5Z-r8b" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="rBK-Ks-T3z"/>
+                <constraint firstItem="0ji-AR-2x0" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="tMU-VX-BpZ"/>
+                <constraint firstItem="y2q-5Z-r8b" firstAttribute="top" secondItem="HOE-qe-SjD" secondAttribute="bottom" constant="32" id="tSH-qd-Fw2"/>
+                <constraint firstAttribute="trailing" secondItem="sTd-cQ-Y63" secondAttribute="trailing" constant="363" id="v5e-LI-8NJ"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                    <color key="value" red="0.92502373459999998" green="0.9370655417" blue="0.95360046629999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+        </customView>
+    </objects>
+    <resources>
+        <image name="CheckIcon" width="64" height="64"/>
+    </resources>
+</document>

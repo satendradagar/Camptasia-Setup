@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CSHomeViewController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="SSView">
+            <rect key="frame" x="0.0" y="0.0" width="1202" height="799"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="xVG-h8-zpC">
+                    <rect key="frame" x="421" y="230" width="359" height="339"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="359" id="MXp-qp-1xc"/>
+                        <constraint firstAttribute="height" constant="339" id="RZu-Gv-jom"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Record a Video" bezelStyle="shadowlessSquare" image="Recording" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="omo-2A-T2k">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="18"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didClickRecord:" target="-2" id="coB-mE-54S"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="9Te-Ov-fTx">
+                    <rect key="frame" x="872" y="230" width="265" height="286"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="265" id="MBE-Yn-PWY"/>
+                        <constraint firstAttribute="height" constant="286" id="VMJ-zq-V7D"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="See Examples" bezelStyle="shadowlessSquare" image="Examples" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="L5d-NU-Ysq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="18"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didClickExamples:" target="-2" id="Zln-CU-r0z"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="0nC-pj-NNp">
+                    <rect key="frame" x="66" y="230" width="265" height="287"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="265" id="G3o-JK-cd6"/>
+                        <constraint firstAttribute="height" constant="287" id="vUg-hE-kb5"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Get recording tips" bezelStyle="shadowlessSquare" image="Tips" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Snh-iO-78b">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system" size="18"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didClickTips:" target="-2" id="KRD-VL-gk1"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fjy-9r-tBN">
+                    <rect key="frame" x="30" y="707" width="452" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="448" id="OPc-XK-uzK"/>
+                        <constraint firstAttribute="height" constant="45" id="vSf-Yi-adS"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title=" What would you like to do?" id="dgw-rV-qum">
+                        <font key="font" metaFont="system" size="37"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FIH-bi-EgP" customClass="CSAttrributedButton">
+                    <rect key="frame" x="43" y="43" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="axk-Q7-OYf"/>
+                        <constraint firstAttribute="height" constant="50" id="f1p-j9-6zd"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Contact support" bezelStyle="shadowlessSquare" alignment="center" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="06T-ND-Q2O">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="systemBold" size="20"/>
+                    </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xVG-h8-zpC" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="7sY-tF-Eqj"/>
+                <constraint firstItem="9Te-Ov-fTx" firstAttribute="bottom" secondItem="xVG-h8-zpC" secondAttribute="bottom" id="BY6-C0-rmr"/>
+                <constraint firstAttribute="bottom" secondItem="FIH-bi-EgP" secondAttribute="bottom" constant="43" id="DA6-Rv-ZGl"/>
+                <constraint firstItem="xVG-h8-zpC" firstAttribute="leading" secondItem="0nC-pj-NNp" secondAttribute="trailing" constant="90" id="HMT-jF-nH5"/>
+                <constraint firstItem="9Te-Ov-fTx" firstAttribute="leading" secondItem="xVG-h8-zpC" secondAttribute="trailing" constant="92" id="UQj-Zp-4jD"/>
+                <constraint firstItem="xVG-h8-zpC" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="VY2-fK-fi4"/>
+                <constraint firstItem="fjy-9r-tBN" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="32" id="bg0-4Q-E36"/>
+                <constraint firstItem="0nC-pj-NNp" firstAttribute="bottom" secondItem="xVG-h8-zpC" secondAttribute="bottom" id="fK9-Wm-oaE"/>
+                <constraint firstItem="FIH-bi-EgP" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="h79-8W-PvH"/>
+                <constraint firstItem="fjy-9r-tBN" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="47" id="rfN-Cn-yJe"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                    <color key="value" red="0.92502373456954956" green="0.93706554174423218" blue="0.95360046625137329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="139" y="167.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Examples" width="157" height="141"/>
+        <image name="Recording" width="237" height="190"/>
+        <image name="Tips" width="157" height="142"/>
+    </resources>
+</document>

@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A049E851DA8DC03006F2B2A /* CSComponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E831DA8DC03006F2B2A /* CSComponentsViewController.m */; };
+		9A049E861DA8DC03006F2B2A /* CSComponentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A049E841DA8DC03006F2B2A /* CSComponentsViewController.xib */; };
+		9A049E8A1DA918CC006F2B2A /* CSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E891DA918CC006F2B2A /* CSButton.m */; };
+		9A049E8D1DA93177006F2B2A /* CSAttrributedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E8C1DA93177006F2B2A /* CSAttrributedButton.m */; };
+		9A049E911DA94DB7006F2B2A /* CSSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E8F1DA94DB7006F2B2A /* CSSetupViewController.m */; };
+		9A049E921DA94DB7006F2B2A /* CSSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A049E901DA94DB7006F2B2A /* CSSetupViewController.xib */; };
+		9A049E951DAA823B006F2B2A /* CSCheckboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E941DAA823B006F2B2A /* CSCheckboxView.m */; };
+		9A049E991DAA8A7E006F2B2A /* CSGetReadyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E971DAA8A7E006F2B2A /* CSGetReadyController.m */; };
+		9A049E9A1DAA8A7E006F2B2A /* CSGetReadyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A049E981DAA8A7E006F2B2A /* CSGetReadyController.xib */; };
+		9A049E9D1DAAA33F006F2B2A /* SSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E9C1DAAA33F006F2B2A /* SSView.m */; };
+		9A049EA01DAAA805006F2B2A /* NSViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E9F1DAAA805006F2B2A /* NSViewController+Navigation.m */; };
+		9AB80BA71DA89BF100765234 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80BA61DA89BF100765234 /* AppDelegate.m */; };
+		9AB80BAA1DA89BF100765234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80BA91DA89BF100765234 /* main.m */; };
+		9AB80BAC1DA89BF100765234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB80BAB1DA89BF100765234 /* Assets.xcassets */; };
+		9AB80BAF1DA89BF100765234 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB80BAD1DA89BF100765234 /* MainMenu.xib */; };
+		9AB80BBC1DA8A9E300765234 /* CSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80BBA1DA8A9E300765234 /* CSHomeViewController.m */; };
+		9AB80BBD1DA8A9E300765234 /* CSHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB80BBB1DA8A9E300765234 /* CSHomeViewController.xib */; };
+		9AB80BC11DA8BCB400765234 /* CSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80BC01DA8BCB400765234 /* CSUtility.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A049E821DA8DC03006F2B2A /* CSComponentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSComponentsViewController.h; sourceTree = "<group>"; };
+		9A049E831DA8DC03006F2B2A /* CSComponentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSComponentsViewController.m; sourceTree = "<group>"; };
+		9A049E841DA8DC03006F2B2A /* CSComponentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSComponentsViewController.xib; sourceTree = "<group>"; };
+		9A049E881DA918CC006F2B2A /* CSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSButton.h; sourceTree = "<group>"; };
+		9A049E891DA918CC006F2B2A /* CSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSButton.m; sourceTree = "<group>"; };
+		9A049E8B1DA93177006F2B2A /* CSAttrributedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAttrributedButton.h; sourceTree = "<group>"; };
+		9A049E8C1DA93177006F2B2A /* CSAttrributedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAttrributedButton.m; sourceTree = "<group>"; };
+		9A049E8E1DA94DB7006F2B2A /* CSSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSetupViewController.h; sourceTree = "<group>"; };
+		9A049E8F1DA94DB7006F2B2A /* CSSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSetupViewController.m; sourceTree = "<group>"; };
+		9A049E901DA94DB7006F2B2A /* CSSetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSSetupViewController.xib; sourceTree = "<group>"; };
+		9A049E931DAA823B006F2B2A /* CSCheckboxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCheckboxView.h; sourceTree = "<group>"; };
+		9A049E941DAA823B006F2B2A /* CSCheckboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCheckboxView.m; sourceTree = "<group>"; };
+		9A049E961DAA8A7E006F2B2A /* CSGetReadyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGetReadyController.h; sourceTree = "<group>"; };
+		9A049E971DAA8A7E006F2B2A /* CSGetReadyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGetReadyController.m; sourceTree = "<group>"; };
+		9A049E981DAA8A7E006F2B2A /* CSGetReadyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSGetReadyController.xib; sourceTree = "<group>"; };
+		9A049E9B1DAAA33F006F2B2A /* SSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSView.h; sourceTree = "<group>"; };
+		9A049E9C1DAAA33F006F2B2A /* SSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSView.m; sourceTree = "<group>"; };
+		9A049E9E1DAAA805006F2B2A /* NSViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSViewController+Navigation.h"; sourceTree = "<group>"; };
+		9A049E9F1DAAA805006F2B2A /* NSViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+Navigation.m"; sourceTree = "<group>"; };
+		9AB80BA21DA89BF100765234 /* Camptasia Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camptasia Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB80BA51DA89BF100765234 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AB80BA61DA89BF100765234 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AB80BA91DA89BF100765234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AB80BAB1DA89BF100765234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AB80BAE1DA89BF100765234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9AB80BB01DA89BF100765234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB80BB91DA8A9E300765234 /* CSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHomeViewController.h; sourceTree = "<group>"; };
+		9AB80BBA1DA8A9E300765234 /* CSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHomeViewController.m; sourceTree = "<group>"; };
+		9AB80BBB1DA8A9E300765234 /* CSHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSHomeViewController.xib; sourceTree = "<group>"; };
+		9AB80BBF1DA8BCB400765234 /* CSUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSUtility.h; sourceTree = "<group>"; };
+		9AB80BC01DA8BCB400765234 /* CSUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUtility.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AB80B9F1DA89BF000765234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A049E871DA918B1006F2B2A /* CustomCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				9A049E9B1DAAA33F006F2B2A /* SSView.h */,
+				9A049E9C1DAAA33F006F2B2A /* SSView.m */,
+				9A049E881DA918CC006F2B2A /* CSButton.h */,
+				9A049E891DA918CC006F2B2A /* CSButton.m */,
+				9A049E8B1DA93177006F2B2A /* CSAttrributedButton.h */,
+				9A049E8C1DA93177006F2B2A /* CSAttrributedButton.m */,
+				9A049E931DAA823B006F2B2A /* CSCheckboxView.h */,
+				9A049E941DAA823B006F2B2A /* CSCheckboxView.m */,
+				9A049E9E1DAAA805006F2B2A /* NSViewController+Navigation.h */,
+				9A049E9F1DAAA805006F2B2A /* NSViewController+Navigation.m */,
+			);
+			path = CustomCocoa;
+			sourceTree = "<group>";
+		};
+		9AB80B991DA89BF000765234 = {
+			isa = PBXGroup;
+			children = (
+				9AB80BA41DA89BF100765234 /* Camptasia Setup */,
+				9AB80BA31DA89BF100765234 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AB80BA31DA89BF100765234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AB80BA21DA89BF100765234 /* Camptasia Setup.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AB80BA41DA89BF100765234 /* Camptasia Setup */ = {
+			isa = PBXGroup;
+			children = (
+				9A049E871DA918B1006F2B2A /* CustomCocoa */,
+				9AB80BBE1DA8ABF800765234 /* ModelObjects */,
+				9AB80BB61DA8A96300765234 /* ViewControllers */,
+				9AB80BA51DA89BF100765234 /* AppDelegate.h */,
+				9AB80BA61DA89BF100765234 /* AppDelegate.m */,
+				9AB80BBF1DA8BCB400765234 /* CSUtility.h */,
+				9AB80BC01DA8BCB400765234 /* CSUtility.m */,
+				9AB80BAB1DA89BF100765234 /* Assets.xcassets */,
+				9AB80BAD1DA89BF100765234 /* MainMenu.xib */,
+				9AB80BB01DA89BF100765234 /* Info.plist */,
+				9AB80BA81DA89BF100765234 /* Supporting Files */,
+			);
+			path = "Camptasia Setup";
+			sourceTree = "<group>";
+		};
+		9AB80BA81DA89BF100765234 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AB80BA91DA89BF100765234 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AB80BB61DA8A96300765234 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AB80BB91DA8A9E300765234 /* CSHomeViewController.h */,
+				9AB80BBA1DA8A9E300765234 /* CSHomeViewController.m */,
+				9AB80BBB1DA8A9E300765234 /* CSHomeViewController.xib */,
+				9A049E821DA8DC03006F2B2A /* CSComponentsViewController.h */,
+				9A049E831DA8DC03006F2B2A /* CSComponentsViewController.m */,
+				9A049E841DA8DC03006F2B2A /* CSComponentsViewController.xib */,
+				9A049E8E1DA94DB7006F2B2A /* CSSetupViewController.h */,
+				9A049E8F1DA94DB7006F2B2A /* CSSetupViewController.m */,
+				9A049E901DA94DB7006F2B2A /* CSSetupViewController.xib */,
+				9A049E961DAA8A7E006F2B2A /* CSGetReadyController.h */,
+				9A049E971DAA8A7E006F2B2A /* CSGetReadyController.m */,
+				9A049E981DAA8A7E006F2B2A /* CSGetReadyController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9AB80BBE1DA8ABF800765234 /* ModelObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AB80BA11DA89BF000765234 /* Camptasia Setup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "Camptasia Setup" */;
+			buildPhases = (
+				9AB80B9E1DA89BF000765234 /* Sources */,
+				9AB80B9F1DA89BF000765234 /* Frameworks */,
+				9AB80BA01DA89BF000765234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Camptasia Setup";
+			productName = "Camptasia Setup";
+			productReference = 9AB80BA21DA89BF100765234 /* Camptasia Setup.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AB80B9A1DA89BF000765234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Satendra Singh";
+				TargetAttributes = {
+					9AB80BA11DA89BF000765234 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "Camptasia Setup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AB80B991DA89BF000765234;
+			productRefGroup = 9AB80BA31DA89BF100765234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AB80BA11DA89BF000765234 /* Camptasia Setup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AB80BA01DA89BF000765234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A049E9A1DAA8A7E006F2B2A /* CSGetReadyController.xib in Resources */,
+				9AB80BAC1DA89BF100765234 /* Assets.xcassets in Resources */,
+				9A049E921DA94DB7006F2B2A /* CSSetupViewController.xib in Resources */,
+				9AB80BBD1DA8A9E300765234 /* CSHomeViewController.xib in Resources */,
+				9A049E861DA8DC03006F2B2A /* CSComponentsViewController.xib in Resources */,
+				9AB80BAF1DA89BF100765234 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AB80B9E1DA89BF000765234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A049E951DAA823B006F2B2A /* CSCheckboxView.m in Sources */,
+				9A049E9D1DAAA33F006F2B2A /* SSView.m in Sources */,
+				9A049E911DA94DB7006F2B2A /* CSSetupViewController.m in Sources */,
+				9AB80BC11DA8BCB400765234 /* CSUtility.m in Sources */,
+				9AB80BAA1DA89BF100765234 /* main.m in Sources */,
+				9AB80BBC1DA8A9E300765234 /* CSHomeViewController.m in Sources */,
+				9A049E8A1DA918CC006F2B2A /* CSButton.m in Sources */,
+				9A049EA01DAAA805006F2B2A /* NSViewController+Navigation.m in Sources */,
+				9A049E991DAA8A7E006F2B2A /* CSGetReadyController.m in Sources */,
+				9AB80BA71DA89BF100765234 /* AppDelegate.m in Sources */,
+				9A049E8D1DA93177006F2B2A /* CSAttrributedButton.m in Sources */,
+				9A049E851DA8DC03006F2B2A /* CSComponentsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AB80BAD1DA89BF100765234 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AB80BAE1DA89BF100765234 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AB80BB11DA89BF100765234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9AB80BB21DA89BF100765234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AB80BB41DA89BF100765234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Camptasia Setup/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.corebits.Camptasia-Setup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AB80BB51DA89BF100765234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Camptasia Setup/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.corebits.Camptasia-Setup";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "Camptasia Setup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB80BB11DA89BF100765234 /* Debug */,
+				9AB80BB21DA89BF100765234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "Camptasia Setup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB80BB41DA89BF100765234 /* Debug */,
+				9AB80BB51DA89BF100765234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AB80B9A1DA89BF000765234 /* Project object */;
+}
