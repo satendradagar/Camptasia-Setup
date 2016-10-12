@@ -16,5 +16,6 @@
 @property (weak) IBOutlet NSTextField *label;
 
 - (void)configureState:(BOOL)isDisable;
+-(BOOL)canContinue;
 
 @end

@@ -26,10 +26,11 @@
     homeViewController = [[CSHomeViewController alloc] initWithNibName:@"CSHomeViewController" bundle:nil];
     [self.window.contentView addSubview:homeViewController.view];
     [CSUtility addAutoresizingConstraintsToChild:homeViewController.view withParent:_window.contentView];
-    NSSize screenSize = [[NSScreen mainScreen] frame].size;
-    [self.window setContentSize:screenSize];
-    [self.window setFrameOrigin:NSZeroPoint];
-    [self.window toggleFullScreen:nil];
+    NSRect screen = [[NSScreen deepestScreen] frame];
+    [self.window setFrame:screen display:YES];
+//    [self.window setContentSize:screenSize];
+//    [self.window setFrameOrigin:NSZeroPoint];
+//    [self.window toggleFullScreen:nil];
 }
 
 

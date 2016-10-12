@@ -22,5 +22,8 @@
     [super drawRect:dirtyRect];
 }
 
+- (void)mouseDown:(NSEvent *)theEvent{
+        //Do nothing to not propagate the click event to descendant views
+}
 
 @end

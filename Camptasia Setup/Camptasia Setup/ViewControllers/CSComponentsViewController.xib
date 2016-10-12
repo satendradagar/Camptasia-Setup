@@ -8,6 +8,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CSComponentsViewController">
             <connections>
+                <outlet property="continueButton" destination="2q4-Jx-9jT" id="fd7-ZP-gaa"/>
+                <outlet property="learningButton" destination="Qco-ud-jua" id="Vg0-wG-jMk"/>
+                <outlet property="lectureButton" destination="qsQ-gm-Q6S" id="jTp-Ru-lEk"/>
+                <outlet property="presentationButton" destination="jxK-bM-Hvf" id="SkO-gV-dkP"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -59,8 +63,11 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                         <font key="font" metaFont="system" size="18"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="didSelectLecture:" target="-2" id="hZa-Pe-Pbl"/>
+                    </connections>
                 </button>
-                <button translatesAutoresizingMaskIntoConstraints="NO" id="jxK-bM-Hvf" customClass="CSButton">
+                <button tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="jxK-bM-Hvf" customClass="CSButton">
                     <rect key="frame" x="425" y="288" width="350" height="225"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="jxK-bM-Hvf" secondAttribute="height" multiplier="14:9" id="T35-Hi-wmC"/>
@@ -69,13 +76,19 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                         <font key="font" metaFont="system" size="18"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="didSelectPresentation:" target="-2" id="w2H-DL-nL8"/>
+                    </connections>
                 </button>
-                <button translatesAutoresizingMaskIntoConstraints="NO" id="Qco-ud-jua" customClass="CSButton">
+                <button tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="Qco-ud-jua" customClass="CSButton">
                     <rect key="frame" x="807" y="288" width="350" height="225"/>
                     <buttonCell key="cell" type="square" title="Get recording tips" bezelStyle="shadowlessSquare" image="Learning" imagePosition="only" alignment="center" refusesFirstResponder="YES" imageScaling="axesIndependently" inset="2" id="17T-56-4tW">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                         <font key="font" metaFont="system" size="18"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="didSelectLearning:" target="-2" id="ayc-9M-GBa"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2q4-Jx-9jT" customClass="CSAttrributedButton">
                     <rect key="frame" x="957" y="43" width="200" height="50"/>
@@ -141,6 +154,20 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="QfH-cw-yih" customClass="CSAttrributedButton">
+                    <rect key="frame" x="43" y="751" width="30" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="O1o-ql-562"/>
+                        <constraint firstAttribute="height" constant="29" id="OWs-rt-lbm"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Back" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="tSU-tl-h2I">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didClickBack:" target="-2" id="pce-G2-bG6"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="pTC-tK-hpS" secondAttribute="bottom" constant="43" id="1s6-tN-cFJ"/>
@@ -158,11 +185,13 @@
                 <constraint firstItem="OeB-nc-waP" firstAttribute="centerX" secondItem="Qco-ud-jua" secondAttribute="centerX" id="MIb-6v-IDF"/>
                 <constraint firstItem="Qco-ud-jua" firstAttribute="leading" secondItem="jxK-bM-Hvf" secondAttribute="trailing" constant="32" id="O14-xZ-zUi"/>
                 <constraint firstItem="anq-uS-iqe" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="UsL-R5-fTx"/>
+                <constraint firstItem="QfH-cw-yih" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="Y9x-mD-w6D"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Znb-oh-Ber"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="cRS-g7-mfM"/>
                 <constraint firstItem="OeB-nc-waP" firstAttribute="top" secondItem="Qco-ud-jua" secondAttribute="bottom" constant="32" id="dYY-W7-XkQ"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="centerY" secondItem="Qco-ud-jua" secondAttribute="centerY" id="i30-Lh-hhK"/>
                 <constraint firstItem="YgX-l7-tWO" firstAttribute="top" secondItem="qsQ-gm-Q6S" secondAttribute="bottom" constant="32" id="lHU-SO-LCo"/>
+                <constraint firstItem="QfH-cw-yih" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="m3k-k8-jua"/>
                 <constraint firstItem="pTC-tK-hpS" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="mL7-p1-kYd"/>
                 <constraint firstAttribute="trailing" secondItem="2q4-Jx-9jT" secondAttribute="trailing" constant="43" id="tdT-iP-iHe"/>
                 <constraint firstAttribute="bottom" secondItem="2q4-Jx-9jT" secondAttribute="bottom" constant="43" id="wh0-Zo-YXF"/>
@@ -176,6 +205,7 @@
         </customView>
     </objects>
     <resources>
+        <image name="Back" width="60" height="60"/>
         <image name="Learning" width="350" height="198.5"/>
         <image name="Lecture" width="350" height="196"/>
         <image name="Presentation" width="350" height="207.5"/>

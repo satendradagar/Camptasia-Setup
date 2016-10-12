@@ -9,7 +9,21 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 
+extern NSString const *defaultsLectureKey;
+extern NSString const *defaultsPresentationKey;
+extern NSString const *defaultsLearningKey;
+
+extern NSString const *defaultsStudioLights;
+extern NSString const *defaultsRoomLights;
+extern NSString const *defaultsLapelMicrophone;
+extern NSString const *defaultsPresentationLoaded;
+extern NSString const *defaultsLearningGlass;
+
 @interface CSUtility : NSObject
+
++(void)saveValue:(BOOL)val forKey:(NSString const *)key;
+
++(BOOL)valueForKey:(NSString const *)key;
 
 // -------------------------------------------------------------------------
 //	addAutoresizingConstraintsToChild: child withParent:parent

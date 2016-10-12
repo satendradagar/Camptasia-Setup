@@ -27,6 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.acceptsTouchEvents = YES;
+
     // Do view setup here.
 }
 
@@ -52,6 +54,12 @@
 
 -(IBAction)didClickContactSupport:(id)sender{
     
+}
+
+
+-(IBAction)didClickBack:(id)sender{
+    
+    [self popViewController];
 }
 
 

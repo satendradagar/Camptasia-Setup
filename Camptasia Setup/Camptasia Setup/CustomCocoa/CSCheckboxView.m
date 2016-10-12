@@ -32,4 +32,14 @@
     
 }
 
+-(BOOL)canContinue{
+    
+    if (NO == self.button.enabled || YES == self.button.state) {
+        
+        return YES;
+        
+    }
+    return NO;
+}
+
 @end

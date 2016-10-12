@@ -47,7 +47,7 @@
 		9A049E9C1DAAA33F006F2B2A /* SSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSView.m; sourceTree = "<group>"; };
 		9A049E9E1DAAA805006F2B2A /* NSViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSViewController+Navigation.h"; sourceTree = "<group>"; };
 		9A049E9F1DAAA805006F2B2A /* NSViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+Navigation.m"; sourceTree = "<group>"; };
-		9AB80BA21DA89BF100765234 /* Camptasia Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camptasia Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB80BA21DA89BF100765234 /* Camtasia Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camtasia Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB80BA51DA89BF100765234 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AB80BA61DA89BF100765234 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9AB80BA91DA89BF100765234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		9AB80BA31DA89BF100765234 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AB80BA21DA89BF100765234 /* Camptasia Setup.app */,
+				9AB80BA21DA89BF100765234 /* Camtasia Setup.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9AB80BA11DA89BF000765234 /* Camptasia Setup */ = {
+		9AB80BA11DA89BF000765234 /* Camtasia Setup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "Camptasia Setup" */;
+			buildConfigurationList = 9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "Camtasia Setup" */;
 			buildPhases = (
 				9AB80B9E1DA89BF000765234 /* Sources */,
 				9AB80B9F1DA89BF000765234 /* Frameworks */,
@@ -172,9 +172,9 @@
 			);
 			dependencies = (
 			);
-			name = "Camptasia Setup";
+			name = "Camtasia Setup";
 			productName = "Camptasia Setup";
-			productReference = 9AB80BA21DA89BF100765234 /* Camptasia Setup.app */;
+			productReference = 9AB80BA21DA89BF100765234 /* Camtasia Setup.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "Camptasia Setup" */;
+			buildConfigurationList = 9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "Camtasia Setup" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -206,7 +206,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9AB80BA11DA89BF000765234 /* Camptasia Setup */,
+				9AB80BA11DA89BF000765234 /* Camtasia Setup */,
 			);
 		};
 /* End PBXProject section */
@@ -377,7 +377,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "Camptasia Setup" */ = {
+		9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "Camtasia Setup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB80BB11DA89BF100765234 /* Debug */,
@@ -386,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "Camptasia Setup" */ = {
+		9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "Camtasia Setup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB80BB41DA89BF100765234 /* Debug */,

@@ -16,44 +16,77 @@
             <rect key="frame" x="0.0" y="0.0" width="1202" height="799"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button translatesAutoresizingMaskIntoConstraints="NO" id="xVG-h8-zpC">
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="xVG-h8-zpC" customClass="CSAttrributedButton">
                     <rect key="frame" x="421" y="230" width="359" height="339"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="359" id="MXp-qp-1xc"/>
                         <constraint firstAttribute="height" constant="339" id="RZu-Gv-jom"/>
                     </constraints>
-                    <buttonCell key="cell" type="square" title="Record a Video" bezelStyle="shadowlessSquare" image="Recording" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="omo-2A-T2k">
+                    <buttonCell key="cell" type="square" title="Record a Video" bezelStyle="shadowlessSquare" image="Recording" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="omo-2A-T2k">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system" size="18"/>
                     </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" red="0.93323183060000003" green="0.93339174989999996" blue="0.93322181699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="didClickRecord:" target="-2" id="coB-mE-54S"/>
                     </connections>
                 </button>
-                <button translatesAutoresizingMaskIntoConstraints="NO" id="9Te-Ov-fTx">
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="9Te-Ov-fTx" customClass="CSAttrributedButton">
                     <rect key="frame" x="872" y="230" width="265" height="286"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="265" id="MBE-Yn-PWY"/>
                         <constraint firstAttribute="height" constant="286" id="VMJ-zq-V7D"/>
                     </constraints>
-                    <buttonCell key="cell" type="square" title="See Examples" bezelStyle="shadowlessSquare" image="Examples" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="L5d-NU-Ysq">
+                    <buttonCell key="cell" type="square" title="See Examples" bezelStyle="shadowlessSquare" image="Examples" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="L5d-NU-Ysq">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system" size="18"/>
                     </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" red="0.93323183059692383" green="0.9333917498588562" blue="0.93322181701660156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="didClickExamples:" target="-2" id="Zln-CU-r0z"/>
                     </connections>
                 </button>
-                <button translatesAutoresizingMaskIntoConstraints="NO" id="0nC-pj-NNp">
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="0nC-pj-NNp" customClass="CSAttrributedButton">
                     <rect key="frame" x="66" y="230" width="265" height="287"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="265" id="G3o-JK-cd6"/>
                         <constraint firstAttribute="height" constant="287" id="vUg-hE-kb5"/>
                     </constraints>
-                    <buttonCell key="cell" type="square" title="Get recording tips" bezelStyle="shadowlessSquare" image="Tips" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Snh-iO-78b">
+                    <buttonCell key="cell" type="square" title="Get recording tips" bezelStyle="shadowlessSquare" image="Tips" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="Snh-iO-78b">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system" size="18"/>
                     </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" red="0.93323183060000003" green="0.93339174989999996" blue="0.93322181699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="didClickTips:" target="-2" id="KRD-VL-gk1"/>
                     </connections>
@@ -92,18 +125,60 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vJM-Tp-PER">
+                    <rect key="frame" x="123" y="200" width="150" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="CQb-r5-CTh"/>
+                        <constraint firstAttribute="height" constant="22" id="byI-zf-NYW"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Get recording tips" id="3Ye-4q-paQ">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z6J-7u-059">
+                    <rect key="frame" x="526" y="200" width="150" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="JRQ-qQ-nX0"/>
+                        <constraint firstAttribute="height" constant="22" id="taA-ig-GRN"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Record a Video" id="8gd-0Q-AlW">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BNn-dc-Mg5">
+                    <rect key="frame" x="929" y="200" width="150" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="aB5-0Z-59G"/>
+                        <constraint firstAttribute="height" constant="22" id="d2C-XG-JTe"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="See Examples" id="q5H-xN-I8H">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
+                <constraint firstItem="vJM-Tp-PER" firstAttribute="top" secondItem="0nC-pj-NNp" secondAttribute="bottom" constant="8" id="5Ik-BG-whM"/>
+                <constraint firstItem="BNn-dc-Mg5" firstAttribute="top" secondItem="9Te-Ov-fTx" secondAttribute="bottom" constant="8" id="7J0-mV-rar"/>
                 <constraint firstItem="xVG-h8-zpC" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="7sY-tF-Eqj"/>
                 <constraint firstItem="9Te-Ov-fTx" firstAttribute="bottom" secondItem="xVG-h8-zpC" secondAttribute="bottom" id="BY6-C0-rmr"/>
                 <constraint firstAttribute="bottom" secondItem="FIH-bi-EgP" secondAttribute="bottom" constant="43" id="DA6-Rv-ZGl"/>
                 <constraint firstItem="xVG-h8-zpC" firstAttribute="leading" secondItem="0nC-pj-NNp" secondAttribute="trailing" constant="90" id="HMT-jF-nH5"/>
+                <constraint firstItem="vJM-Tp-PER" firstAttribute="centerX" secondItem="0nC-pj-NNp" secondAttribute="centerX" id="HeG-5X-LI5"/>
+                <constraint firstItem="Z6J-7u-059" firstAttribute="centerX" secondItem="xVG-h8-zpC" secondAttribute="centerX" id="JG7-MP-jeP"/>
                 <constraint firstItem="9Te-Ov-fTx" firstAttribute="leading" secondItem="xVG-h8-zpC" secondAttribute="trailing" constant="92" id="UQj-Zp-4jD"/>
                 <constraint firstItem="xVG-h8-zpC" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="VY2-fK-fi4"/>
+                <constraint firstItem="BNn-dc-Mg5" firstAttribute="centerX" secondItem="9Te-Ov-fTx" secondAttribute="centerX" id="XQi-Nr-aSK"/>
                 <constraint firstItem="fjy-9r-tBN" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="32" id="bg0-4Q-E36"/>
                 <constraint firstItem="0nC-pj-NNp" firstAttribute="bottom" secondItem="xVG-h8-zpC" secondAttribute="bottom" id="fK9-Wm-oaE"/>
                 <constraint firstItem="FIH-bi-EgP" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="h79-8W-PvH"/>
                 <constraint firstItem="fjy-9r-tBN" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="47" id="rfN-Cn-yJe"/>
+                <constraint firstItem="Z6J-7u-059" firstAttribute="top" secondItem="xVG-h8-zpC" secondAttribute="bottom" constant="8" id="ruO-Ap-bq5"/>
             </constraints>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -114,8 +189,8 @@
         </customView>
     </objects>
     <resources>
-        <image name="Examples" width="157" height="141"/>
-        <image name="Recording" width="237" height="190"/>
-        <image name="Tips" width="157" height="142"/>
+        <image name="Examples" width="512" height="512"/>
+        <image name="Recording" width="512" height="512"/>
+        <image name="Tips" width="512" height="512"/>
     </resources>
 </document>

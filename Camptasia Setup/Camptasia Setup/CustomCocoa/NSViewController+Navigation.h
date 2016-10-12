@@ -12,4 +12,6 @@
 
 -(void)pushViewController:(NSViewController *)viewController;
 
+-(void)popViewController;
+
 @end

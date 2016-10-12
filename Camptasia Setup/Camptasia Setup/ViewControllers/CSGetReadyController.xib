@@ -7,6 +7,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CSGetReadyController">
             <connections>
+                <outlet property="exitButton" destination="29b-nR-aeO" id="pWz-z9-6Er"/>
+                <outlet property="label" destination="aXj-bl-FWm" id="iad-qk-UCd"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -173,12 +175,58 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="29b-nR-aeO" customClass="CSAttrributedButton">
+                    <rect key="frame" x="980" y="682" width="200" height="98"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" id="gWj-ea-xF6"/>
+                        <constraint firstAttribute="width" constant="200" id="zSj-Z0-M0p"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Exit" bezelStyle="shadowlessSquare" alignment="center" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="Yc3-5d-U83">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="20" name=".SFNSText-Bold"/>
+                    </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.2274509804" green="0.3635390101" blue="0.46984679600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" red="0.80392156862745101" green="0.37254901960784315" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="deviceWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didClickExit:" target="-2" id="Jjx-0x-aBF"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="r3b-Kt-wMO" customClass="CSAttrributedButton">
+                    <rect key="frame" x="43" y="751" width="30" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Qon-dT-KIH"/>
+                        <constraint firstAttribute="height" constant="29" id="Unf-ns-nIy"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Back" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="E2g-Zo-Kqb">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didClickBack:" target="-2" id="1ra-R9-49e"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="29b-nR-aeO" secondAttribute="trailing" constant="20" id="3Tg-GX-hpG"/>
+                <constraint firstItem="29b-nR-aeO" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="439-oW-eFS"/>
                 <constraint firstItem="tdi-lW-uSh" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="47" id="5Fq-wt-Uth"/>
                 <constraint firstItem="aXj-bl-FWm" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Opv-Z2-Kmn"/>
                 <constraint firstItem="aXj-bl-FWm" firstAttribute="top" secondItem="tdi-lW-uSh" secondAttribute="bottom" constant="201" id="Qsz-r7-Km8"/>
                 <constraint firstItem="tdi-lW-uSh" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="Tk8-wr-Jic"/>
+                <constraint firstItem="r3b-Kt-wMO" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="avU-jx-mOm"/>
+                <constraint firstItem="r3b-Kt-wMO" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="bOg-ye-ODj"/>
                 <constraint firstAttribute="trailing" secondItem="oUx-w1-VJu" secondAttribute="trailing" id="gt9-Ft-jlB"/>
                 <constraint firstAttribute="bottom" secondItem="oUx-w1-VJu" secondAttribute="bottom" id="naN-XA-bv2"/>
                 <constraint firstItem="oUx-w1-VJu" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="xIX-MV-1WW"/>
@@ -193,6 +241,7 @@
     <resources>
         <image name="Audio" width="175" height="62"/>
         <image name="Audio-2" width="170" height="64"/>
+        <image name="Back" width="60" height="60"/>
         <image name="Camera" width="101" height="91"/>
         <image name="FullScreen" width="119.5" height="92.5"/>
         <image name="Record" width="84.5" height="83.5"/>
