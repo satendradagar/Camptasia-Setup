@@ -18,13 +18,17 @@
 		9A049E9A1DAA8A7E006F2B2A /* CSGetReadyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A049E981DAA8A7E006F2B2A /* CSGetReadyController.xib */; };
 		9A049E9D1DAAA33F006F2B2A /* SSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E9C1DAAA33F006F2B2A /* SSView.m */; };
 		9A049EA01DAAA805006F2B2A /* NSViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A049E9F1DAAA805006F2B2A /* NSViewController+Navigation.m */; };
+		9AB535011DB0B67A00058612 /* CSToolTipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB534FF1DB0B67A00058612 /* CSToolTipController.m */; };
+		9AB535021DB0B67A00058612 /* CSToolTipController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB535001DB0B67A00058612 /* CSToolTipController.xib */; };
 		9AB80BA71DA89BF100765234 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80BA61DA89BF100765234 /* AppDelegate.m */; };
 		9AB80BAA1DA89BF100765234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80BA91DA89BF100765234 /* main.m */; };
-		9AB80BAC1DA89BF100765234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB80BAB1DA89BF100765234 /* Assets.xcassets */; };
 		9AB80BAF1DA89BF100765234 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB80BAD1DA89BF100765234 /* MainMenu.xib */; };
 		9AB80BBC1DA8A9E300765234 /* CSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80BBA1DA8A9E300765234 /* CSHomeViewController.m */; };
 		9AB80BBD1DA8A9E300765234 /* CSHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB80BBB1DA8A9E300765234 /* CSHomeViewController.xib */; };
 		9AB80BC11DA8BCB400765234 /* CSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB80BC01DA8BCB400765234 /* CSUtility.m */; };
+		9AF45D311DC64C09007443F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF45D301DC64C09007443F1 /* Assets.xcassets */; };
+		9AF45D351DC65309007443F1 /* CSPresentationTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF45D331DC65309007443F1 /* CSPresentationTip.m */; };
+		9AF45D361DC65309007443F1 /* CSPresentationTip.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF45D341DC65309007443F1 /* CSPresentationTip.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +51,13 @@
 		9A049E9C1DAAA33F006F2B2A /* SSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSView.m; sourceTree = "<group>"; };
 		9A049E9E1DAAA805006F2B2A /* NSViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSViewController+Navigation.h"; sourceTree = "<group>"; };
 		9A049E9F1DAAA805006F2B2A /* NSViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+Navigation.m"; sourceTree = "<group>"; };
-		9AB80BA21DA89BF100765234 /* Camtasia Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camtasia Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB534FE1DB0B67A00058612 /* CSToolTipController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSToolTipController.h; sourceTree = "<group>"; };
+		9AB534FF1DB0B67A00058612 /* CSToolTipController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSToolTipController.m; sourceTree = "<group>"; };
+		9AB535001DB0B67A00058612 /* CSToolTipController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSToolTipController.xib; sourceTree = "<group>"; };
+		9AB80BA21DA89BF100765234 /* One-Click Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One-Click Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB80BA51DA89BF100765234 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AB80BA61DA89BF100765234 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9AB80BA91DA89BF100765234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9AB80BAB1DA89BF100765234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB80BAE1DA89BF100765234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9AB80BB01DA89BF100765234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB80BB91DA8A9E300765234 /* CSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHomeViewController.h; sourceTree = "<group>"; };
@@ -59,6 +65,10 @@
 		9AB80BBB1DA8A9E300765234 /* CSHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSHomeViewController.xib; sourceTree = "<group>"; };
 		9AB80BBF1DA8BCB400765234 /* CSUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSUtility.h; sourceTree = "<group>"; };
 		9AB80BC01DA8BCB400765234 /* CSUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUtility.m; sourceTree = "<group>"; };
+		9AF45D301DC64C09007443F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		9AF45D321DC65309007443F1 /* CSPresentationTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPresentationTip.h; sourceTree = "<group>"; };
+		9AF45D331DC65309007443F1 /* CSPresentationTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPresentationTip.m; sourceTree = "<group>"; };
+		9AF45D341DC65309007443F1 /* CSPresentationTip.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSPresentationTip.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +110,7 @@
 		9AB80BA31DA89BF100765234 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AB80BA21DA89BF100765234 /* Camtasia Setup.app */,
+				9AB80BA21DA89BF100765234 /* One-Click Studio.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,9 +123,9 @@
 				9AB80BB61DA8A96300765234 /* ViewControllers */,
 				9AB80BA51DA89BF100765234 /* AppDelegate.h */,
 				9AB80BA61DA89BF100765234 /* AppDelegate.m */,
+				9AF45D301DC64C09007443F1 /* Assets.xcassets */,
 				9AB80BBF1DA8BCB400765234 /* CSUtility.h */,
 				9AB80BC01DA8BCB400765234 /* CSUtility.m */,
-				9AB80BAB1DA89BF100765234 /* Assets.xcassets */,
 				9AB80BAD1DA89BF100765234 /* MainMenu.xib */,
 				9AB80BB01DA89BF100765234 /* Info.plist */,
 				9AB80BA81DA89BF100765234 /* Supporting Files */,
@@ -146,6 +156,12 @@
 				9A049E961DAA8A7E006F2B2A /* CSGetReadyController.h */,
 				9A049E971DAA8A7E006F2B2A /* CSGetReadyController.m */,
 				9A049E981DAA8A7E006F2B2A /* CSGetReadyController.xib */,
+				9AB534FE1DB0B67A00058612 /* CSToolTipController.h */,
+				9AB534FF1DB0B67A00058612 /* CSToolTipController.m */,
+				9AB535001DB0B67A00058612 /* CSToolTipController.xib */,
+				9AF45D321DC65309007443F1 /* CSPresentationTip.h */,
+				9AF45D331DC65309007443F1 /* CSPresentationTip.m */,
+				9AF45D341DC65309007443F1 /* CSPresentationTip.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9AB80BA11DA89BF000765234 /* Camtasia Setup */ = {
+		9AB80BA11DA89BF000765234 /* One-Click Studio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "Camtasia Setup" */;
+			buildConfigurationList = 9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "One-Click Studio" */;
 			buildPhases = (
 				9AB80B9E1DA89BF000765234 /* Sources */,
 				9AB80B9F1DA89BF000765234 /* Frameworks */,
@@ -172,9 +188,9 @@
 			);
 			dependencies = (
 			);
-			name = "Camtasia Setup";
+			name = "One-Click Studio";
 			productName = "Camptasia Setup";
-			productReference = 9AB80BA21DA89BF100765234 /* Camtasia Setup.app */;
+			productReference = 9AB80BA21DA89BF100765234 /* One-Click Studio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "Camtasia Setup" */;
+			buildConfigurationList = 9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "One-Click Studio" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -206,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9AB80BA11DA89BF000765234 /* Camtasia Setup */,
+				9AB80BA11DA89BF000765234 /* One-Click Studio */,
 			);
 		};
 /* End PBXProject section */
@@ -217,11 +233,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A049E9A1DAA8A7E006F2B2A /* CSGetReadyController.xib in Resources */,
-				9AB80BAC1DA89BF100765234 /* Assets.xcassets in Resources */,
 				9A049E921DA94DB7006F2B2A /* CSSetupViewController.xib in Resources */,
 				9AB80BBD1DA8A9E300765234 /* CSHomeViewController.xib in Resources */,
 				9A049E861DA8DC03006F2B2A /* CSComponentsViewController.xib in Resources */,
+				9AF45D311DC64C09007443F1 /* Assets.xcassets in Resources */,
+				9AF45D361DC65309007443F1 /* CSPresentationTip.xib in Resources */,
 				9AB80BAF1DA89BF100765234 /* MainMenu.xib in Resources */,
+				9AB535021DB0B67A00058612 /* CSToolTipController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB535011DB0B67A00058612 /* CSToolTipController.m in Sources */,
+				9AF45D351DC65309007443F1 /* CSPresentationTip.m in Sources */,
 				9A049E951DAA823B006F2B2A /* CSCheckboxView.m in Sources */,
 				9A049E9D1DAAA33F006F2B2A /* SSView.m in Sources */,
 				9A049E911DA94DB7006F2B2A /* CSSetupViewController.m in Sources */,
@@ -377,7 +397,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "Camtasia Setup" */ = {
+		9AB80B9D1DA89BF000765234 /* Build configuration list for PBXProject "One-Click Studio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB80BB11DA89BF100765234 /* Debug */,
@@ -386,7 +406,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "Camtasia Setup" */ = {
+		9AB80BB31DA89BF100765234 /* Build configuration list for PBXNativeTarget "One-Click Studio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB80BB41DA89BF100765234 /* Debug */,

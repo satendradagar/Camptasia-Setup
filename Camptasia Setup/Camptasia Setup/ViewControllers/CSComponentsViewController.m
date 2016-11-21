@@ -24,6 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (nil == [[NSUserDefaults standardUserDefaults] objectForKey:(NSString *)defaultsLectureKey]) {
+        
+        [CSUtility saveValue:YES forKey:defaultsLectureKey];
+        [CSUtility saveValue:YES forKey:defaultsPresentationKey];
+        [CSUtility saveValue:YES forKey:defaultsLearningKey];
+
+    }
     [_lectureButton setState:[CSUtility valueForKey:defaultsLectureKey]];
     [_presentationButton setState:[CSUtility valueForKey:defaultsPresentationKey]];
     [_learningButton setState:[CSUtility valueForKey:defaultsLearningKey]];

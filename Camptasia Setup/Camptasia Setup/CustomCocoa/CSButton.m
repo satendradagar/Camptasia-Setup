@@ -20,10 +20,13 @@
     if (self.state == 1) {
         [self.layer setBorderWidth:5.0];
         [self.layer setBorderColor:[[NSColor colorWithRed:108/255.0 green:167/255.0 blue:84/255.0 alpha:1.0] CGColor]];
+        [_signButton setImage:[NSImage imageNamed:@"CheckIcon"]];
     }
     else{
         [self.layer setBorderWidth:5.0];
         [self.layer setBorderColor:[[NSColor colorWithRed:202/255.0 green:8/255.0 blue:19/255.0 alpha:1.0] CGColor]];
+        [_signButton setImage:[NSImage imageNamed:@"close"]];
+
     }
         // Drawing code here.//108 167 84
 }

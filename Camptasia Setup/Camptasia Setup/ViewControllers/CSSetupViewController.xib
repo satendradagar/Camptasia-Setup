@@ -29,17 +29,17 @@
                         <constraint firstAttribute="width" constant="535" id="7Da-cL-Gvs"/>
                         <constraint firstAttribute="height" constant="45" id="aDE-4G-gaw"/>
                     </constraints>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Set up:" id="68i-Yz-EK2">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Setup Checklist:" id="68i-Yz-EK2">
                         <font key="font" metaFont="system" size="37"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="0ji-AR-2x0" customClass="CSCheckboxView">
-                    <rect key="frame" x="109" y="560" width="728" height="90"/>
+                    <rect key="frame" x="109" y="588" width="728" height="90"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkp-RG-TTG">
-                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <rect key="frame" x="126" y="29" width="241" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Studio Lights are on?" id="6a9-rO-Xbk">
                                 <font key="font" metaFont="systemLight" size="26"/>
@@ -66,20 +66,42 @@
                                 <action selector="didSelectStudioLights:" target="-2" id="Jnr-sd-eQU"/>
                             </connections>
                         </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mjz-UR-mFf" customClass="CSAttrributedButton">
+                            <rect key="frame" x="367" y="20" width="81" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="81" id="dpa-8y-THk"/>
+                                <constraint firstAttribute="height" constant="32" id="tuw-AL-HJx"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="[See How]" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Lcm-xj-gDf">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" red="0.25098039215686274" green="0.47843137254901957" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toolTipForStudioLights:" target="-2" id="zAZ-M8-k0m"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="90" id="0N6-GY-yt1"/>
+                        <constraint firstItem="Mjz-UR-mFf" firstAttribute="leading" secondItem="0ji-AR-2x0" secondAttribute="leading" constant="367" id="nET-qV-YWF"/>
+                        <constraint firstAttribute="bottom" secondItem="Mjz-UR-mFf" secondAttribute="bottom" constant="20" id="xxi-Hq-gZR"/>
                     </constraints>
                     <connections>
                         <outlet property="button" destination="JYl-m9-hFt" id="UyE-Db-wPV"/>
                         <outlet property="label" destination="zkp-RG-TTG" id="5Sz-4d-2y3"/>
+                        <outlet property="toolTipButton" destination="Mjz-UR-mFf" id="uTL-Iz-N1z"/>
                     </connections>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="XQV-vX-XFc" customClass="CSCheckboxView">
-                    <rect key="frame" x="109" y="438" width="728" height="90"/>
+                    <rect key="frame" x="109" y="466" width="728" height="90"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bsm-G0-Szw">
-                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <rect key="frame" x="126" y="29" width="227" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Room lights are off?" id="GN8-ry-xAV">
                                 <font key="font" metaFont="systemLight" size="26"/>
@@ -106,20 +128,42 @@
                                 <action selector="didSelectRoomLights:" target="-2" id="KSS-R9-sQ7"/>
                             </connections>
                         </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hvT-6m-JIi" customClass="CSAttrributedButton">
+                            <rect key="frame" x="359" y="20" width="81" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="YS9-1e-5oR"/>
+                                <constraint firstAttribute="width" constant="81" id="r8D-Qd-7xb"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="[See How]" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="Le9-gR-uMO">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" red="0.25098039220000001" green="0.47843137250000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toolTipForRoomLights:" target="-2" id="c41-j3-0oX"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hvT-6m-JIi" secondAttribute="bottom" constant="20" id="IQi-G3-f5E"/>
                         <constraint firstAttribute="height" constant="90" id="K5O-R2-mCN"/>
+                        <constraint firstItem="hvT-6m-JIi" firstAttribute="leading" secondItem="XQV-vX-XFc" secondAttribute="leading" constant="359" id="OMo-eb-c5X"/>
                     </constraints>
                     <connections>
                         <outlet property="button" destination="4FU-nx-i6B" id="vXK-fu-PkB"/>
                         <outlet property="label" destination="Bsm-G0-Szw" id="ibR-Cj-PEb"/>
+                        <outlet property="toolTipButton" destination="hvT-6m-JIi" id="PdJ-hq-AUo"/>
                     </connections>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="sTd-cQ-Y63" customClass="CSCheckboxView">
-                    <rect key="frame" x="109" y="316" width="728" height="90"/>
+                    <rect key="frame" x="109" y="344" width="773" height="90"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRc-VZ-6rt">
-                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <rect key="frame" x="126" y="29" width="532" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Lapel microphone is on and properly attached?" id="JKa-PO-Kd0">
                                 <font key="font" metaFont="systemLight" size="26"/>
@@ -146,20 +190,42 @@
                                 <action selector="didSelectLapelMicrophone:" target="-2" id="AoA-Dq-RUI"/>
                             </connections>
                         </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zei-qA-NfV" customClass="CSAttrributedButton">
+                            <rect key="frame" x="664" y="20" width="81" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="81" id="Myl-SQ-yce"/>
+                                <constraint firstAttribute="height" constant="32" id="ySW-ZZ-zZd"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="[See How]" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="LNQ-VR-flZ">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" red="0.25098039220000001" green="0.47843137250000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toolTipForLapelMicrophone:" target="-2" id="TvG-RB-UPr"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zei-qA-NfV" secondAttribute="bottom" constant="20" id="5X3-LQ-Tnv"/>
                         <constraint firstAttribute="height" constant="90" id="gU9-ya-49Y"/>
+                        <constraint firstItem="zei-qA-NfV" firstAttribute="leading" secondItem="sTd-cQ-Y63" secondAttribute="leading" constant="664" id="ne9-hy-Ee0"/>
                     </constraints>
                     <connections>
                         <outlet property="button" destination="y9f-XI-GLW" id="L0j-mF-Hzy"/>
                         <outlet property="label" destination="eRc-VZ-6rt" id="MM3-id-LHN"/>
+                        <outlet property="toolTipButton" destination="zei-qA-NfV" id="tHG-7T-mi7"/>
                     </connections>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="HOE-qe-SjD" customClass="CSCheckboxView">
-                    <rect key="frame" x="109" y="194" width="728" height="90"/>
+                    <rect key="frame" x="109" y="222" width="728" height="90"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSa-0g-dtk">
-                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <rect key="frame" x="126" y="29" width="458" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Presentation is loaded on the computer?" id="NGC-ec-KCN">
                                 <font key="font" metaFont="systemLight" size="26"/>
@@ -186,20 +252,42 @@
                                 <action selector="didSelectPresentationLoaded:" target="-2" id="9Qq-RI-BzH"/>
                             </connections>
                         </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="33D-DH-vS7" customClass="CSAttrributedButton">
+                            <rect key="frame" x="590" y="20" width="81" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="Qii-Wb-A1y"/>
+                                <constraint firstAttribute="width" constant="81" id="nbt-KQ-Tdr"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="[See How]" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="4XQ-7J-A2N">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" red="0.25098039220000001" green="0.47843137250000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toolTipForPresentationLoaded:" target="-2" id="NgR-C6-83C"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="33D-DH-vS7" firstAttribute="leading" secondItem="HOE-qe-SjD" secondAttribute="leading" constant="590" id="P8R-Rx-l8k"/>
                         <constraint firstAttribute="height" constant="90" id="fZk-dB-ehZ"/>
+                        <constraint firstAttribute="bottom" secondItem="33D-DH-vS7" secondAttribute="bottom" constant="20" id="z5b-L3-YJR"/>
                     </constraints>
                     <connections>
                         <outlet property="button" destination="xcn-cM-oMZ" id="AeO-qs-twZ"/>
                         <outlet property="label" destination="WSa-0g-dtk" id="HrY-q9-sZE"/>
+                        <outlet property="toolTipButton" destination="33D-DH-vS7" id="4KO-tM-JmR"/>
                     </connections>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="y2q-5Z-r8b" customClass="CSCheckboxView">
-                    <rect key="frame" x="109" y="72" width="728" height="90"/>
+                    <rect key="frame" x="109" y="100" width="728" height="90"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhL-tQ-Tme">
-                            <rect key="frame" x="126" y="29" width="584" height="31"/>
+                            <rect key="frame" x="126" y="29" width="326" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Learning Glass lights are on?" id="yPj-lw-8ts">
                                 <font key="font" metaFont="systemLight" size="26"/>
@@ -226,13 +314,35 @@
                                 <action selector="didSelectLearningGlass:" target="-2" id="mBB-lD-2ud"/>
                             </connections>
                         </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pZv-kN-dFH" customClass="CSAttrributedButton">
+                            <rect key="frame" x="458" y="20" width="81" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="coH-Be-N57"/>
+                                <constraint firstAttribute="width" constant="81" id="ta2-BO-sqM"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="[See How]" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="3Me-2Q-80e">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" red="0.25098039220000001" green="0.47843137250000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toolTipForLearningGlass:" target="-2" id="gDf-mp-jBZ"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="90" id="7dl-Hs-Vde"/>
+                        <constraint firstItem="pZv-kN-dFH" firstAttribute="leading" secondItem="y2q-5Z-r8b" secondAttribute="leading" constant="458" id="dDZ-tt-wuh"/>
+                        <constraint firstAttribute="bottom" secondItem="pZv-kN-dFH" secondAttribute="bottom" constant="20" id="kTU-dK-cAJ"/>
                     </constraints>
                     <connections>
                         <outlet property="button" destination="UJn-Ja-1uW" id="kW1-ns-bMH"/>
                         <outlet property="label" destination="bhL-tQ-Tme" id="daj-6p-NOj"/>
+                        <outlet property="toolTipButton" destination="pZv-kN-dFH" id="hLq-lt-eB6"/>
                     </connections>
                 </customView>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HVq-NF-IEg" customClass="CSAttrributedButton">
@@ -269,7 +379,7 @@
                         <constraint firstAttribute="height" constant="29" id="Z5O-hL-Mbe"/>
                         <constraint firstAttribute="width" constant="30" id="z4J-xd-GPk"/>
                     </constraints>
-                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Back" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="PbN-K2-xYB">
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Back" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="PbN-K2-xYB">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -277,21 +387,45 @@
                         <action selector="didClickBack:" target="-2" id="ogD-Vy-jWN"/>
                     </connections>
                 </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gX0-UG-veJ" customClass="CSAttrributedButton">
+                    <rect key="frame" x="43" y="43" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="7AB-nK-1z2"/>
+                        <constraint firstAttribute="height" constant="50" id="EeE-MN-kcr"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Contact support" bezelStyle="shadowlessSquare" alignment="center" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="jLb-El-GVL">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="systemBold" size="20"/>
+                    </buttonCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="CGv-yL-TEC" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="0H7-eL-5HN"/>
                 <constraint firstItem="CGv-yL-TEC" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="47" id="0IP-Qo-6X2"/>
                 <constraint firstAttribute="trailing" secondItem="HOE-qe-SjD" secondAttribute="trailing" constant="363" id="4JZ-uI-ehe"/>
-                <constraint firstItem="0ji-AR-2x0" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="150" id="5xs-Pi-6w1"/>
+                <constraint firstItem="0ji-AR-2x0" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="122" id="5xs-Pi-6w1"/>
                 <constraint firstItem="XQV-vX-XFc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="7jM-TW-73v"/>
-                <constraint firstItem="XQV-vX-XFc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="272" id="DFf-i6-wp5"/>
+                <constraint firstItem="XQV-vX-XFc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="244" id="DFf-i6-wp5"/>
                 <constraint firstItem="HOE-qe-SjD" firstAttribute="top" secondItem="sTd-cQ-Y63" secondAttribute="bottom" constant="32" id="DhB-RP-7R5"/>
                 <constraint firstItem="HOE-qe-SjD" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="Dlx-Tj-Cxk"/>
                 <constraint firstItem="81f-Ji-Gfg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="EXp-O0-Swh"/>
                 <constraint firstItem="sTd-cQ-Y63" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="IIq-U7-pZr"/>
                 <constraint firstAttribute="trailing" secondItem="HVq-NF-IEg" secondAttribute="trailing" constant="43" id="QF3-PD-XA7"/>
+                <constraint firstItem="gX0-UG-veJ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="UaQ-yu-k6F"/>
                 <constraint firstAttribute="trailing" secondItem="y2q-5Z-r8b" secondAttribute="trailing" constant="363" id="XOw-07-pCz"/>
                 <constraint firstItem="sTd-cQ-Y63" firstAttribute="top" secondItem="XQV-vX-XFc" secondAttribute="bottom" constant="32" id="Yby-oo-lni"/>
+                <constraint firstAttribute="bottom" secondItem="gX0-UG-veJ" secondAttribute="bottom" constant="43" id="ZMN-ap-mwt"/>
                 <constraint firstAttribute="bottom" secondItem="HVq-NF-IEg" secondAttribute="bottom" constant="36" id="bl6-sa-a4y"/>
                 <constraint firstAttribute="trailing" secondItem="0ji-AR-2x0" secondAttribute="trailing" constant="363" id="eKM-sd-ToJ"/>
                 <constraint firstItem="81f-Ji-Gfg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="hQA-gu-62c"/>
@@ -299,7 +433,7 @@
                 <constraint firstItem="y2q-5Z-r8b" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="rBK-Ks-T3z"/>
                 <constraint firstItem="0ji-AR-2x0" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="109" id="tMU-VX-BpZ"/>
                 <constraint firstItem="y2q-5Z-r8b" firstAttribute="top" secondItem="HOE-qe-SjD" secondAttribute="bottom" constant="32" id="tSH-qd-Fw2"/>
-                <constraint firstAttribute="trailing" secondItem="sTd-cQ-Y63" secondAttribute="trailing" constant="363" id="v5e-LI-8NJ"/>
+                <constraint firstAttribute="trailing" secondItem="sTd-cQ-Y63" secondAttribute="trailing" constant="318" id="v5e-LI-8NJ"/>
             </constraints>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="bgColor">

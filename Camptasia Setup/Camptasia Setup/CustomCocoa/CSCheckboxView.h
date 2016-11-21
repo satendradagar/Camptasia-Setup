@@ -13,6 +13,8 @@
 
 @property (weak) IBOutlet CSAttrributedButton *button;
 
+@property (weak) IBOutlet CSAttrributedButton *toolTipButton;
+
 @property (weak) IBOutlet NSTextField *label;
 
 - (void)configureState:(BOOL)isDisable;

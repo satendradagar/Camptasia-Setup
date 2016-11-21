@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "CSAttrributedButton.h"
 
 @interface CSButton : NSButton
+
+@property (nonatomic, weak) IBOutlet CSAttrributedButton *signButton;
 
 @end

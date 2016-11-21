@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CSToolTipController">
+            <connections>
+                <outlet property="bottomIconHeight" destination="OOP-Ek-2Da" id="vbo-Ff-roQ"/>
+                <outlet property="bottomImage" destination="5sT-OW-wbB" id="XdL-7Y-Gr2"/>
+                <outlet property="bottomMessage" destination="Pv9-Yt-tCS" id="gNb-N4-UKz"/>
+                <outlet property="firstIconHeight" destination="WwE-uG-Q8u" id="SJF-LI-ks0"/>
+                <outlet property="header" destination="Ov1-XN-W4V" id="Kaf-9J-2Gp"/>
+                <outlet property="topImage" destination="Clo-3S-Zn8" id="fhT-Ek-hVD"/>
+                <outlet property="topMessage" destination="JIR-Dw-FmR" id="zjY-3D-A5e"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView misplaced="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="399"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-XN-W4V">
+                    <rect key="frame" x="18" y="95" width="516" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="iEG-bw-a5i"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Studio Light" id="Fwb-ty-YhW">
+                        <font key="font" metaFont="system" size="20"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="YIK-vG-t97">
+                    <rect key="frame" x="12" y="84" width="528" height="5"/>
+                </box>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Clo-3S-Zn8">
+                    <rect key="frame" x="20" y="78" width="512" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="WwE-uG-Q8u"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Recording" id="V3a-r1-g86"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="JIR-Dw-FmR">
+                    <rect key="frame" x="18" y="53" width="516" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Multiline Label" id="we2-tN-g4m">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sT-OW-wbB">
+                    <rect key="frame" x="20" y="45" width="512" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="OOP-Ek-2Da"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Examples" id="7A9-Ym-6aP"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Pv9-Yt-tCS">
+                    <rect key="frame" x="18" y="20" width="516" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Multiline Label" id="0zE-qW-aRT">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ov1-XN-W4V" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="6Uv-Y0-kNL"/>
+                <constraint firstAttribute="trailing" secondItem="YIK-vG-t97" secondAttribute="trailing" constant="12" id="BbC-Uu-wAl"/>
+                <constraint firstAttribute="trailing" secondItem="Ov1-XN-W4V" secondAttribute="trailing" constant="20" id="Eb7-qG-yKc"/>
+                <constraint firstItem="YIK-vG-t97" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="12" id="JbU-M7-irY"/>
+                <constraint firstAttribute="trailing" secondItem="Clo-3S-Zn8" secondAttribute="trailing" constant="20" id="NM1-lR-uXf"/>
+                <constraint firstItem="Pv9-Yt-tCS" firstAttribute="top" secondItem="5sT-OW-wbB" secondAttribute="bottom" constant="8" id="TJD-kJ-rnP"/>
+                <constraint firstItem="JIR-Dw-FmR" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="U5y-Y9-OiR"/>
+                <constraint firstItem="Pv9-Yt-tCS" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="aZl-i3-p59"/>
+                <constraint firstAttribute="trailing" secondItem="5sT-OW-wbB" secondAttribute="trailing" constant="20" id="buF-Kv-2eH"/>
+                <constraint firstItem="5sT-OW-wbB" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="cG9-e2-uko"/>
+                <constraint firstItem="5sT-OW-wbB" firstAttribute="top" secondItem="JIR-Dw-FmR" secondAttribute="bottom" constant="8" id="eTj-Kh-hlf"/>
+                <constraint firstAttribute="bottom" secondItem="Pv9-Yt-tCS" secondAttribute="bottom" constant="20" id="epv-KO-CXg"/>
+                <constraint firstItem="Ov1-XN-W4V" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="h9f-k9-jlT"/>
+                <constraint firstItem="JIR-Dw-FmR" firstAttribute="top" secondItem="Clo-3S-Zn8" secondAttribute="bottom" constant="8" id="j9t-zm-q2r"/>
+                <constraint firstAttribute="trailing" secondItem="JIR-Dw-FmR" secondAttribute="trailing" constant="20" id="kwV-xS-7wT"/>
+                <constraint firstItem="Clo-3S-Zn8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="p62-Wc-E1K"/>
+                <constraint firstItem="YIK-vG-t97" firstAttribute="top" secondItem="Ov1-XN-W4V" secondAttribute="bottom" constant="8" id="tAF-5N-dAB"/>
+                <constraint firstAttribute="trailing" secondItem="Pv9-Yt-tCS" secondAttribute="trailing" constant="20" id="vOw-ap-FwZ"/>
+                <constraint firstItem="Clo-3S-Zn8" firstAttribute="top" secondItem="YIK-vG-t97" secondAttribute="bottom" constant="8" id="zwe-TZ-pRe"/>
+            </constraints>
+            <point key="canvasLocation" x="95" y="32.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Examples" width="512" height="512"/>
+        <image name="Recording" width="512" height="512"/>
+    </resources>
+</document>

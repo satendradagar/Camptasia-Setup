@@ -98,7 +98,7 @@
                             </textFieldCell>
                         </textField>
                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="m93-TV-x0S">
-                            <rect key="frame" x="493" y="121" width="213" height="38"/>
+                            <rect key="frame" x="493" y="102" width="213" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="38" id="c3b-Jg-XeC"/>
                                 <constraint firstAttribute="width" constant="209" id="wF1-Mb-le0"/>
@@ -110,7 +110,7 @@
                             </textFieldCell>
                         </textField>
                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="U4h-Nv-9RF">
-                            <rect key="frame" x="730" y="121" width="230" height="38"/>
+                            <rect key="frame" x="730" y="102" width="230" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="38" id="8TJ-0z-tAb"/>
                                 <constraint firstAttribute="width" constant="226" id="nla-8Z-0DY"/>
@@ -136,7 +136,7 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="m93-TV-x0S" firstAttribute="centerX" secondItem="9hK-LG-xHj" secondAttribute="centerX" id="4tU-Hg-zCF"/>
-                        <constraint firstItem="9hK-LG-xHj" firstAttribute="top" secondItem="m93-TV-x0S" secondAttribute="bottom" constant="8" id="62D-ML-kwJ"/>
+                        <constraint firstItem="9hK-LG-xHj" firstAttribute="top" secondItem="m93-TV-x0S" secondAttribute="bottom" constant="-11" id="62D-ML-kwJ"/>
                         <constraint firstItem="1Zj-Wb-wA1" firstAttribute="centerX" secondItem="RSS-GF-ZE0" secondAttribute="centerX" id="7O5-AD-VEA"/>
                         <constraint firstItem="bzT-At-b2c" firstAttribute="centerX" secondItem="U4h-Nv-9RF" secondAttribute="centerX" id="8rk-wK-y4X"/>
                         <constraint firstItem="GW6-TU-TfK" firstAttribute="centerX" secondItem="YaE-qI-UBe" secondAttribute="centerX" id="9oe-Uo-Fb2"/>
@@ -151,7 +151,7 @@
                         <constraint firstItem="opx-l8-954" firstAttribute="leading" secondItem="bzT-At-b2c" secondAttribute="trailing" constant="125" id="f8c-52-SZo"/>
                         <constraint firstAttribute="trailing" secondItem="opx-l8-954" secondAttribute="trailing" constant="50" id="fNz-sD-Fc2"/>
                         <constraint firstAttribute="bottom" secondItem="YaE-qI-UBe" secondAttribute="bottom" constant="20" id="flA-Le-0qm"/>
-                        <constraint firstItem="bzT-At-b2c" firstAttribute="top" secondItem="U4h-Nv-9RF" secondAttribute="bottom" constant="8" id="hta-jy-Ebx"/>
+                        <constraint firstItem="bzT-At-b2c" firstAttribute="top" secondItem="U4h-Nv-9RF" secondAttribute="bottom" constant="-11" id="hta-jy-Ebx"/>
                         <constraint firstItem="YaE-qI-UBe" firstAttribute="leading" secondItem="oUx-w1-VJu" secondAttribute="leading" constant="50" id="jfu-JY-jx7"/>
                         <constraint firstAttribute="height" constant="220" id="t9T-HD-w5J"/>
                         <constraint firstItem="opx-l8-954" firstAttribute="centerX" secondItem="pm2-BH-lmv" secondAttribute="centerX" id="tQG-Wi-JhR"/>
@@ -209,7 +209,7 @@
                         <constraint firstAttribute="width" constant="30" id="Qon-dT-KIH"/>
                         <constraint firstAttribute="height" constant="29" id="Unf-ns-nIy"/>
                     </constraints>
-                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Back" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="E2g-Zo-Kqb">
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Back" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="E2g-Zo-Kqb">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>

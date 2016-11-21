@@ -19,15 +19,18 @@
 - (void)configureState:(BOOL)isDisable{
     
     self.button.enabled = isDisable;
+    self.toolTipButton.enabled = isDisable;
     if (NO == isDisable) {
         self.button.bgColor = [NSColor lightGrayColor];
         self.label.textColor = [NSColor lightGrayColor];
+        self.toolTipButton.textColor = [NSColor lightGrayColor];
 
     }
     else{
         self.button.bgColor = nil;
         self.label.textColor = [NSColor blackColor];
-        
+        self.toolTipButton.textColor = [NSColor colorWithRed:64/255.0 green:122/255.0 blue:213.0/255 alpha:1];
+
     }
     
 }

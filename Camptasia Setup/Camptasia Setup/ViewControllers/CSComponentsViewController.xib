@@ -65,6 +65,7 @@
                     </buttonCell>
                     <connections>
                         <action selector="didSelectLecture:" target="-2" id="hZa-Pe-Pbl"/>
+                        <outlet property="signButton" destination="NCW-Dj-mYV" id="jea-wn-eYA"/>
                     </connections>
                 </button>
                 <button tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="jxK-bM-Hvf" customClass="CSButton">
@@ -78,7 +79,19 @@
                     </buttonCell>
                     <connections>
                         <action selector="didSelectPresentation:" target="-2" id="w2H-DL-nL8"/>
+                        <outlet property="signButton" destination="xqb-S3-i43" id="3sI-2v-64r"/>
                     </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xqb-S3-i43" customClass="CSAttrributedButton">
+                    <rect key="frame" x="727" y="465" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="MQq-EK-dZV"/>
+                        <constraint firstAttribute="width" constant="36" id="V9r-Eo-vwS"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CheckIcon" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="J04-lh-Zkf">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
                 </button>
                 <button tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="Qco-ud-jua" customClass="CSButton">
                     <rect key="frame" x="807" y="288" width="350" height="225"/>
@@ -88,6 +101,7 @@
                     </buttonCell>
                     <connections>
                         <action selector="didSelectLearning:" target="-2" id="ayc-9M-GBa"/>
+                        <outlet property="signButton" destination="Exn-B0-Sri" id="FVa-OQ-doq"/>
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2q4-Jx-9jT" customClass="CSAttrributedButton">
@@ -160,7 +174,7 @@
                         <constraint firstAttribute="width" constant="30" id="O1o-ql-562"/>
                         <constraint firstAttribute="height" constant="29" id="OWs-rt-lbm"/>
                     </constraints>
-                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Back" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="tSU-tl-h2I">
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Back" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="tSU-tl-h2I">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -168,10 +182,33 @@
                         <action selector="didClickBack:" target="-2" id="pce-G2-bG6"/>
                     </connections>
                 </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NCW-Dj-mYV" customClass="CSAttrributedButton">
+                    <rect key="frame" x="345" y="465" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="eDa-dw-Pba"/>
+                        <constraint firstAttribute="height" constant="36" id="rlg-Mx-J5X"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CheckIcon" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XKa-Bs-dT1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Exn-B0-Sri" customClass="CSAttrributedButton">
+                    <rect key="frame" x="1109" y="465" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="LPC-SS-hn9"/>
+                        <constraint firstAttribute="height" constant="36" id="mHz-fy-cJr"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="CheckIcon" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7VQ-rz-8hx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="pTC-tK-hpS" secondAttribute="bottom" constant="43" id="1s6-tN-cFJ"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="height" secondItem="Qco-ud-jua" secondAttribute="height" id="3Nk-ze-KOU"/>
+                <constraint firstItem="xqb-S3-i43" firstAttribute="leading" secondItem="jxK-bM-Hvf" secondAttribute="trailing" constant="-48" id="8pz-CI-TLq"/>
                 <constraint firstItem="0Ko-ye-DLp" firstAttribute="centerX" secondItem="jxK-bM-Hvf" secondAttribute="centerX" id="BHI-fR-Q4g"/>
                 <constraint firstItem="YgX-l7-tWO" firstAttribute="centerX" secondItem="qsQ-gm-Q6S" secondAttribute="centerX" id="C09-kW-yhZ"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="width" secondItem="qsQ-gm-Q6S" secondAttribute="width" id="Cs9-U1-cHu"/>
@@ -184,18 +221,23 @@
                 <constraint firstItem="anq-uS-iqe" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="47" id="Lap-tG-Mf8"/>
                 <constraint firstItem="OeB-nc-waP" firstAttribute="centerX" secondItem="Qco-ud-jua" secondAttribute="centerX" id="MIb-6v-IDF"/>
                 <constraint firstItem="Qco-ud-jua" firstAttribute="leading" secondItem="jxK-bM-Hvf" secondAttribute="trailing" constant="32" id="O14-xZ-zUi"/>
+                <constraint firstItem="Qco-ud-jua" firstAttribute="top" secondItem="Exn-B0-Sri" secondAttribute="bottom" constant="-48" id="PxZ-kJ-Oo2"/>
+                <constraint firstItem="NCW-Dj-mYV" firstAttribute="leading" secondItem="qsQ-gm-Q6S" secondAttribute="trailing" constant="-48" id="TeF-Nl-uSV"/>
                 <constraint firstItem="anq-uS-iqe" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="UsL-R5-fTx"/>
                 <constraint firstItem="QfH-cw-yih" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="Y9x-mD-w6D"/>
+                <constraint firstItem="Exn-B0-Sri" firstAttribute="leading" secondItem="Qco-ud-jua" secondAttribute="trailing" constant="-48" id="ZRN-sc-yPq"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Znb-oh-Ber"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="cRS-g7-mfM"/>
                 <constraint firstItem="OeB-nc-waP" firstAttribute="top" secondItem="Qco-ud-jua" secondAttribute="bottom" constant="32" id="dYY-W7-XkQ"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="centerY" secondItem="Qco-ud-jua" secondAttribute="centerY" id="i30-Lh-hhK"/>
+                <constraint firstItem="qsQ-gm-Q6S" firstAttribute="top" secondItem="NCW-Dj-mYV" secondAttribute="bottom" constant="-48" id="jFW-QU-89d"/>
                 <constraint firstItem="YgX-l7-tWO" firstAttribute="top" secondItem="qsQ-gm-Q6S" secondAttribute="bottom" constant="32" id="lHU-SO-LCo"/>
                 <constraint firstItem="QfH-cw-yih" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="m3k-k8-jua"/>
                 <constraint firstItem="pTC-tK-hpS" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="43" id="mL7-p1-kYd"/>
                 <constraint firstAttribute="trailing" secondItem="2q4-Jx-9jT" secondAttribute="trailing" constant="43" id="tdT-iP-iHe"/>
                 <constraint firstAttribute="bottom" secondItem="2q4-Jx-9jT" secondAttribute="bottom" constant="43" id="wh0-Zo-YXF"/>
                 <constraint firstItem="jxK-bM-Hvf" firstAttribute="width" secondItem="Qco-ud-jua" secondAttribute="width" id="yRx-JW-o9A"/>
+                <constraint firstItem="jxK-bM-Hvf" firstAttribute="top" secondItem="xqb-S3-i43" secondAttribute="bottom" constant="-48" id="ytS-Up-cwK"/>
             </constraints>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -206,6 +248,7 @@
     </objects>
     <resources>
         <image name="Back" width="60" height="60"/>
+        <image name="CheckIcon" width="64" height="64"/>
         <image name="Learning" width="350" height="198.5"/>
         <image name="Lecture" width="350" height="196"/>
         <image name="Presentation" width="350" height="207.5"/>
